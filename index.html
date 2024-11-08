@@ -3,14 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <title>Eu Resolvo ONG</title>
 </head>
 <body>
-    <div class="box">
-        <div class="little-caixa">
-            
+    <header>
+        <div class="logo">
+            <a href="#home"><img src="public/imgs/euresolvo.png" alt="logo"></a>
         </div>
-    </div>
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre Nós</a></li>
+                <li><a href="#">Depoimentos</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="menu">
+            <img src="public/imgs/menu.png" alt="">
+        </div>
+    </header>
+    <main id="home">
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide slide-1">
+                <img src="public/imgs/img-teste.jpg" alt="">
+              </div>
+
+              <div class="swiper-slide slide-2">
+                <img src="public/imgs/teste-2.jpg" alt="">
+              </div>
+
+              <div class="swiper-slide slide-3">
+                <img src="public/imgs/img-teste.jpg" alt="">
+              </div>
+              ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          
+          </div>
+    </main>
+    <section class="azul">
+
+    </section>
+
+    <section class="branca">
+
+    </section>
+
+    <section class="azul">
+
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./public/assets/js/bundle.js" type="text/javascript"></script>
 </body>
 </html>
