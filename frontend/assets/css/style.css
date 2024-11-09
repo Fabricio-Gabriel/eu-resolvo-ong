@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -15,7 +17,22 @@ body {
     height: 100vh;
 }
 
+.wpp {
+    height: 70px;
+    position: absolute;
+    top: 87%;
+    left: 92%;
+    z-index: 99;
+    transition: all .2s ease-in-out 0s;
+}
+
+.wpp:hover {
+    height: 72px;
+    cursor: pointer;
+}
+
 header {
+    position: fixed;
     width: 100vw;
     height: 80px;
     background-color: #1c1c1c;
@@ -23,6 +40,7 @@ header {
     justify-content: space-around;
     align-items: center;
     padding-left: 45px;
+    z-index: 99;
 }
 
 nav {
@@ -48,7 +66,7 @@ li {
 
 li a {
     color: #fff;
-    font-family: sans-serif;
+    font-family: "Jost", serif;
     text-decoration: none;
     font-size: 1.2rem;
 }
@@ -74,7 +92,7 @@ li a {
 
 main {
     width: 100vw;
-    height: 700px;
+    height: 800px;
     display: flex;
     justify-content: center;
     background-color: #d7d7d7;
@@ -89,7 +107,7 @@ main {
 
 .swiper-wrapper {
     height: 100%;
-    width: 100%;
+    width: 101%;
     background-color: rgb(202, 202, 202);
 }
 
@@ -102,7 +120,7 @@ main {
 
 .swiper-slide img {
     height: 100%;
-    width: 101%;
+    width: 100%;
 }
 
 .swiper-pagination-bullet {
@@ -115,14 +133,28 @@ main {
     background-color: var(--primary-color);
 }
 
-.azul {
+.swiper-button-prev:hover {
+    color: var(--primary-color);
+}
+
+.colored {
     width: 100vw;
-    height: 600px;
-    background-color: var(--secondary-color);
+    height: 700px;
+    background-image: linear-gradient(90deg, #00b0f2 0%, #f03313);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-sobre {
+    width: 100%;
+    max-width: 1100px;
+    height: 500px;
+    background-color: black;
 }
 
 .branca {
     background-color: #fff;
     width: 100vw;
-    height: 600px;
+    height: 700px;
 }
