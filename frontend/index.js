@@ -33,7 +33,7 @@ const swiper = new Swiper(".swiper", {
         },
 
         next: {
-            translate: ["101%", 0, 0]
+            translate: ["100%", 0, 0]
         }
     }
 });
