@@ -38,18 +38,20 @@ header {
     height: 80px;
     background-color: #1c1c1c;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding-left: 45px;
+    padding-right: 45px;
     z-index: 99;
 }
 
 nav {
-    width: 40%;
+    width: 50%;
     height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    display: none;
 }
 
 ul {
@@ -69,7 +71,7 @@ li a {
     color: #fff;
     font-family: "Jost", serif;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     position: relative;
     transition: all .3s ease-in-out 0s;
 }
@@ -102,7 +104,7 @@ li a:hover {
 }
 
 .menu {
-    display: none;
+    display: block;
 }
 
 .menu img{
@@ -126,6 +128,7 @@ main {
     height: 100%;
     position: relative;
     z-index: 3;
+    overflow: hidden;
 }
 
 .swiper-wrapper {
@@ -245,30 +248,82 @@ footer {
     height: 500px;
 }
 
-/*RESPONSIVIDADE*/
+/*RESPONSIVIDADE SECTION SOBRE*/
 
-@media screen and (min-width: 850px) {
+@media (min-width: 200px) and (max-width: 550px) {
     
     .container-sobre {
         width: 80%;
         max-width: 1200px;
         height: auto;
         display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
         gap: 15px;
+    }
+
+    .txt-sobre {
+        width: 100%;
+    }
+
+    .img-sobre {
+        height: 100%;
+        width: 100%;
+    }
+
+    .img-sobre img {
+        height: 100%;
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    .txt-sobre .p-sobre {
+        font-family: "Poppins", sans-serif;
+        font-size: 0.68rem;
+    } 
+
+    .txt-sobre h2 {
+        font-size: 3rem;
     }
 
 }
 
 
-@media screen and (min-width: 950px) {
+@media (min-width: 550px) and (max-width: 850px) {
 
     .container-sobre {
-        width: 80%;
-        max-width: 1200px;
-        height: auto;
         display: flex;
-        gap: 15px;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
     }
+
+    .txt-sobre {
+        width: 90%;
+    }
+
+    .img-sobre {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .img-sobre img {
+        height: 90%;
+        width: 90%;
+        border-radius: 8px;
+    }
+
+    .txt-sobre .p-sobre {
+        font-family: "Poppins", sans-serif;
+        font-size: 0.8rem;
+    } 
+}
+
+
+@media screen and (min-width: 950px) {
 
     .txt-sobre .p-sobre {
         font-family: "Poppins", sans-serif;
@@ -278,14 +333,6 @@ footer {
 
 
 @media screen and (min-width: 990px) {
-
-    .container-sobre {
-        width: 80%;
-        max-width: 1200px;
-        height: auto;
-        display: flex;
-        gap: 15px;
-    }
     
     .txt-sobre h2 {
         font-family: 'Jost', sans-serif;
@@ -301,14 +348,6 @@ footer {
 }
 
 @media screen and (min-width: 1150px) {
-
-    .container-sobre {
-        width: 80%;
-        max-width: 1200px;
-        height: auto;
-        display: flex;
-        gap: 15px;
-    }
 
     .txt-sobre {
         width: 50%;
@@ -341,11 +380,6 @@ footer {
 @media screen and (min-width: 1250px) {
     .container-sobre {
         width: 100%;
-        max-width: 1200px;
-        height: auto;
-        background-color: rgb(56, 155, 65);
-        display: flex;
-        gap: 15px;
     }
 
     .txt-sobre {
@@ -361,4 +395,47 @@ footer {
         font-size: 1rem;
     }
 }
+/*------------------------------------------------------*/
 
+/* RESPONSIVIDADE DA NAV BAR*/
+
+
+@media screen and (min-width: 924px) {
+
+    header {
+        justify-content: space-around;
+        padding-right: 0;
+    }
+
+    nav {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 1208px) {
+    li a {
+        font-size: 1rem;
+    }
+
+    nav {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 1335px) {
+    
+    li a {
+        color: #fff;
+        font-family: "Jost", serif;
+        text-decoration: none;
+        font-size: 1.2rem;
+        position: relative;
+        transition: all .3s ease-in-out 0s;
+    }
+
+}
