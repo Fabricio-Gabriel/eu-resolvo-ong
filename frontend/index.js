@@ -25,7 +25,7 @@ const swiper = new Swiper(".swiper", {
     },
 
     grabCursor: true,
-    effect: "fade", // Substitui o efeito criativo
+    effect: "fade", 
     fadeEffect: {
         crossFade: true
     }
