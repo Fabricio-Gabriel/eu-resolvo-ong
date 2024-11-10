@@ -334,7 +334,7 @@ main {
 .container-contato {
     width: 100%;
     max-width: 1200px;
-    height: 800px;
+    height: 700px;
     display: flex;
     gap: 30px;
     flex-direction: column;
@@ -360,7 +360,6 @@ main {
 .map {
     height: 100%;
     width: 100%;
-    background-color: #EA2F34;
     display: flex;
     justify-content: space-between;
     overflow-y: hidden;
@@ -368,13 +367,50 @@ main {
 
 iframe {
     height: 100%;
-    width: 70%;
+    width: 75%;
 }
 
 .txt-map {
     height: 100%;
-    width: 30%;
-    background-color: purple;
+    width: 25%;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contain-txt-map {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.txt-map h3 {
+    font-family: 'Jost', sans-serif;
+    font-size: 4.2rem;
+    line-height: 70px;
+    overflow: hidden;
+}
+
+.txt-map p {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.txt-map button {
+    height: 50px;
+    font-size: 1.3rem;
+    background-color: #fff;
+    border: 1px solid black;
+    transition: all .3s ease-in-out 0s;
+}
+
+.txt-map button:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    cursor: pointer;
 }
 
 footer {
