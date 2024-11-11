@@ -432,13 +432,15 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: purple;
+    /* background-color: purple; */
+    border-bottom: 1px solid #fff;
+    padding-bottom: 20px;
 }
 
 .logo-footer {
     height: 100%;
     width: 47%;
-    background-color: chartreuse;
+    /* background-color: chartreuse; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -472,7 +474,7 @@ footer {
 .redes {
     height: 100%;
     width: 47%;
-    background-color: chartreuse;
+    /* background-color: chartreuse; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -503,7 +505,7 @@ footer {
     color: #fff;
     font-family: 'Jost', sans-serif;
     font-size: 1.2rem;
-    margin-top: 15px;
+    margin-top: 45px;
 }
 
 /*RESPONSIVIDADE SECTION SOBRE*/
