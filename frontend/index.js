@@ -31,3 +31,13 @@ const swiper = new Swiper(".swiper", {
     }
 });
 
+
+// Algorito de alteração de data de acordo com o ano
+let div = document.querySelector(".copyright");
+let data = new Date().getFullYear();
+
+if(data < 2024) {
+    div.innerHTML = `Copyright © 2024. Todos os direitos reservados Eu Resolvo-ONG.`;
+} else {
+    div.innerHTML = `Copyright © ${data}. Todos os direitos reservados Eu Resolvo-ONG.`;
+}
