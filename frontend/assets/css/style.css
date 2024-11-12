@@ -67,7 +67,7 @@ li {
     list-style: none;
 }
 
-li a {
+.l-nav a {
     color: #fff;
     font-family: "Jost", serif;
     text-decoration: none;
@@ -76,7 +76,7 @@ li a {
     transition: all .3s ease-in-out 0s;
 }
 
-li a::after {
+.l-nav a::after {
     content: " ";
     width: 0%;
     height: 2.5px;
@@ -87,12 +87,12 @@ li a::after {
     transition: all .5s ease-in-out 0s;
 }
 
-li a:hover::after {
+.l-nav a:hover::after {
     width: 100%;
     color: var(--primary-color);
 }
 
-li a:hover {
+.l-nav a:hover {
     color: var(--primary-color);
 }
 
@@ -203,7 +203,7 @@ main {
 }
 
 .line-servicos {
-    width: 10%;
+    width: 20%;
     height: 5px;
     background-color: #fff;
 }
@@ -239,7 +239,7 @@ main {
 }
 
 .container-servicos {
-    width: 80%;
+    width: 79%;
     max-width: 1200px;
     height: auto;
     display: flex;
@@ -249,23 +249,27 @@ main {
 
 .head-servicos h2 {
     font-family: 'Jost', sans-serif;
-    font-size: 4.5rem;
+    font-size: 3.7rem;
     color: #fff;
 }
 
 .contain-cards {
     width: 100%;
     height: auto;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    justify-items: center;
     margin-top: 25px;
     box-sizing: border-box;
     padding-top: 10px;
+    gap: 15px;
+    
 }
 
 .cards {
-    height: 450px;
-    width: 285px;
+    height: 400px;
+    width: 230px;
     background-image: linear-gradient(180deg, #fff, #dfdfdf);
     border: 1px solid black;
     border-radius: 10px;
@@ -285,21 +289,25 @@ main {
 }
 
 .cards img {
-    height: 90px;
-    width: 90px;
+    height: 70px;
+    width: 70px;
     
 }
 
 .cards h3 {
     font-family: 'Jost', sans-serif;
-    font-size: 2rem;
+    font-size: 1.3rem;
     text-align: center;
     width: 100%;
     box-sizing: border-box;
 }
 
+.area-verde {
+    line-height: 1px;
+}
+
 .h3-margin {
-    margin-top: 10px;
+    margin-top: 3px;
 }
 
 .h3-servicos {
@@ -309,14 +317,14 @@ main {
 
 .cards p {
     font-family: "Poppins", sans-serif;
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     overflow-y: hidden;
 }
 
 
 
 .paragraph {
-    margin-top: 12px;
+    margin-top: 1px;
 }
 
 
@@ -483,8 +491,40 @@ footer {
 
 .contain-redes {
     width: 100%;
-    height: 30%;
-    background-color: #f03313;
+    height: auto;
+    /* background-color: #f03313; */
+    display: flex;
+    align-items: center;
+}
+
+.contain-redes ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contain-redes a{
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.contain-redes img{
+    height: 25px;
+    width: 25px;
+    margin-right: 7px;
+}
+
+.l-footer a{
+    color: #fff;
+    text-decoration: none;
+    transition: all .3s ease-in 0s;
+}
+
+.l-footer a:hover {
+    color: rgb(216, 216, 216);
 }
 
 .redes h4 {
@@ -678,7 +718,7 @@ footer {
 
 
 @media screen and (min-width: 1208px) {
-    li a {
+    .l-nav a {
         font-size: 1rem;
     }
 
@@ -689,7 +729,7 @@ footer {
 
 @media screen and (min-width: 1335px) {
     
-    li a {
+    .l-nav a {
         color: #fff;
         font-family: "Jost", serif;
         text-decoration: none;
@@ -702,9 +742,212 @@ footer {
 
 /*-----------------------------------------------------------*/
 /*RESPONSIVIDADE SERVIÇOS*/
+@media screen and (min-width: 384px) {
+
+    .cards {
+        height: 400px;
+        width: 270px;
+    }
+
+}
+
+@media screen and (min-width: 600px) {
+
+    .container-servicos {
+        width: 70%;
+    }
+
+}
+
+@media screen and (min-width: 772px) {
+
+    .container-servicos {
+        width: 72%;
+    }
+
+    
+    .cards {
+        height: 400px;
+        width: 270px;
+    }
+
+    .contain-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .line-servicos {
+        width: 10%;
+    }
+
+}
+
+@media (min-width: 820px) and (max-width: 893px) {
+
+    .container-servicos {
+        width: 80%;
+    }
+    
+    .cards {
+        height: 400px;
+        width: 290px;
+    }
+
+}
+
+@media screen and (min-width: 893px) {
+
+    .container-servicos {
+        width: 80%;
+        max-width: 1200px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contain-cards {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .cards {
+        height: 320px;
+        width: 285px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .cards img {
+        height: 50px;
+        width: 50px;
+    }
+    
+    .cards h3 {
+        font-family: 'Jost', sans-serif;
+        font-size: 1rem;
+        text-align: center;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .area-verde {
+        line-height: 1px;
+    }
+    
+    .h3-margin {
+        margin-top: 3px;
+    }
+    
+    .h3-servicos {
+        line-height: 35px;
+        overflow: hidden;
+    }
+    
+    .cards p {
+        font-family: "Poppins", sans-serif;
+        font-size: 0.57rem;
+        overflow-y: hidden;
+    }
+    
+}
+
+
+@media screen and (min-width: 1042px) {
+
+    .cards p {
+        font-size: 0.63rem;
+    }
+
+}
+
+@media screen and (min-width: 1060px) {
+
+    .container-servicos {
+        width: 80%;
+    }
+
+    .area-verde {
+        line-height: 25px;
+    }
+
+    .head-servicos h2 {
+        font-family: 'Jost', sans-serif;
+        font-size: 3.7rem;
+        color: #fff;
+    }
+
+    .cards {
+        height: 400px;
+        width: 285px;
+    }
+
+    .cards img {
+        height: 70px;
+        width: 70px;
+    }
+
+    .cards h3 {
+        font-size: 1.3rem;
+    }
+
+    .cards p {
+        font-size: 0.7rem;
+    }
+
+}
 
 @media screen and (min-width: 1250px) {
     .container-servicos {
         width: 100%;
+    }
+
+    .area-verde {
+        line-height: 35px;
+    }
+
+    .line-servicos {
+        width: 10%;
+        height: 5px;
+    }
+
+    .head-servicos h2 {
+        font-family: 'Jost', sans-serif;
+        font-size: 4.5rem;
+        color: #fff;
+    }
+
+
+    .cards {
+        height: 450px;
+        width: 285px;
+    }
+
+    .cards img {
+        height: 90px;
+        width: 90px;
+        
+    }
+    
+    .cards h3 {
+        font-family: 'Jost', sans-serif;
+        font-size: 2rem;
+        text-align: center;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    
+    .cards p {
+        font-family: "Poppins", sans-serif;
+        font-size: 0.85rem;
+        overflow-y: hidden;
+    }
+    
+    .paragraph {
+        margin-top: 12px;
     }
 }
