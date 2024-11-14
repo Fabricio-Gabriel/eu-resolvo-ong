@@ -5,6 +5,7 @@ import 'regenerator-runtime/runtime';
 
 import './assets/css/style.css';
 
+// LÓGICA DO CARROUSSEL
 console.log("inicializando swiper");
 const swiper = new Swiper(".swiper", {
     autoplay: {
@@ -41,3 +42,23 @@ if(data < 2024) {
 } else {
     div.innerHTML = `Copyright © ${data}. Todos os direitos reservados Eu Resolvo-ONG.`;
 }
+
+// LÓGICA DE RESPONSIVIDADE ASIDE E NAVBAR
+let aside = document.querySelector(".aside-nav");
+let close = document.querySelector(".close");
+let menu = document.querySelector(".menu");
+let lAside = document.querySelectorAll(".l-aside");
+
+close.addEventListener('click', () => {
+    aside.classList.toggle('dis-flex');
+});
+
+menu.addEventListener('click', () => {
+    aside.classList.toggle('dis-flex');
+});
+
+lAside.addEventListener('click', () => {
+    lAside.forEach(li => {
+        aside.style.display = 'none';
+    });
+});
