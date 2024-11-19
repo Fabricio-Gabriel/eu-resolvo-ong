@@ -195,10 +195,36 @@ li {
 
 main {
     width: 100vw;
-    height: 800px;
+    height: 500px;
     display: flex;
     justify-content: center;
     background-color: #d7d7d7;
+}
+
+@media screen and (min-width: 650px){
+    main {
+        width: 100vw;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .swiper-slide img {
+        height: auto;
+        width: auto;
+    }
+
+    .swiper-button-prev {
+        display: inline;
+        transition: all .2s ease-in-out 0s;
+    }
+
+    .swiper-button-next {
+        display: inline;
+        transition: all .2s ease-in-out 0s;
+        margin-right: 20px;
+    }
+
 }
 
 .swiper {
@@ -224,7 +250,7 @@ main {
 
 .swiper-slide img {
     height: 100%;
-    width: 100%;
+    width: auto;
     margin-right: 15px;
 }
 
@@ -1407,6 +1433,25 @@ footer {
         font-family: 'Jost', sans-serif;
         font-size: 1.2rem;
         margin-top: 45px;
+    }
+
+}
+
+@media screen and (max-width: 1920px) {
+    .container-sobre {
+        width: 80%;
+    }
+
+    .container-servicos {
+        width: 80%;
+    }
+
+    .container-contato {
+        width: 80%;
+    }
+
+    .contain-footer {
+        width: 80%;
     }
 
 }
