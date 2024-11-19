@@ -1439,19 +1439,19 @@ footer {
 
 @media screen and (max-width: 1920px) {
     .container-sobre {
-        width: 80%;
+        width: 90%;
     }
 
     .container-servicos {
-        width: 80%;
+        width: 90%;
     }
 
     .container-contato {
-        width: 80%;
+        width: 90%;
     }
 
     .contain-footer {
-        width: 80%;
+        width:90%;
     }
 
 }
